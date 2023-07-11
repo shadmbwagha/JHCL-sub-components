@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import {MatSelectModule} from '@angular/material/select';
-import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 })
 export class AppComponent {
   title = 'JHCL-sub-components';
-  
+
   fruits = ["apple", "orange", "banana", "grapes"];
+
+  selectedValue: any;
+  onSelect(event:any){
+    console.log(event);
+    this.selectedValue = event
+  }
 
 }

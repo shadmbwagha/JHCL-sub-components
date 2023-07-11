@@ -7,6 +7,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { NgModel } from '@angular/forms';
 
 @NgModule({
   declarations: [
