@@ -1,25 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MaterialModule } from './material/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSelectModule} from '@angular/material/select';
-import {MatFormFieldModule} from '@angular/material/form-field';
+
 import { NgModel } from '@angular/forms';
+import { AutoCompleteMatComponent } from './auto-complete-mat/auto-complete-mat.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AutoCompleteMatComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgSelectModule,
     BrowserAnimationsModule,
-    MatSelectModule,
-    MatFormFieldModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
