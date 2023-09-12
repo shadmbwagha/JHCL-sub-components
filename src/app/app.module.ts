@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgModel } from '@angular/forms';
 import { AutoCompleteMatComponent } from './auto-complete-mat/auto-complete-mat.component';
+import { SignaturePadComponent } from './signature-pad/signature-pad.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AutoCompleteMatComponent
+    AutoCompleteMatComponent,
+    SignaturePadComponent
   ],
   imports: [
     BrowserModule,
